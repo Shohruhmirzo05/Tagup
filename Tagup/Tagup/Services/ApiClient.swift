@@ -25,9 +25,9 @@ class APIClient {
             var baseURL = URL(string: AppEnvironment.current.baseUrl)!
             switch self {
             case .lookImage( _, _):
-                baseURL = baseURL.appending(path: "lookup")
+                baseURL = baseURL.appending(path: "search").appending(path: "deep")
             case .lookKey( _, _):
-                baseURL = baseURL.appending(path: "lookup")
+                baseURL = baseURL.appending(path: "search").appending(path: "deep")
             }
             return baseURL
         }

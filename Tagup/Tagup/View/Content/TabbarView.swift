@@ -10,7 +10,7 @@ import SwiftUI
 struct TabbarView: View {
     
     @State var selection: Tab = .main
-//    @StateObject var storeKitViewModel = StoreKitViewModel()
+    //    @StateObject var storeKitViewModel = StoreKitViewModel()
     
     init() {
         UITabBar.appearance().backgroundColor = UIColor.tabBackground

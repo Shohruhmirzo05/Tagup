@@ -1,0 +1,215 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "2BFCFE19",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "39.99",
+      "familyShareable" : false,
+      "internalID" : "6742896067",
+      "localizations" : [
+        {
+          "description" : "Get 10000 coins to use in the app!",
+          "displayName" : "10000 Coins",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "hashly.coins.10000",
+      "referenceName" : "10000 coins",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "15.99",
+      "familyShareable" : false,
+      "internalID" : "6742896143",
+      "localizations" : [
+        {
+          "description" : "Get 1500 coins to use in the app!",
+          "displayName" : "1500 Coins",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "hashly.coins.1500",
+      "referenceName" : "1500 coins",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "3.99",
+      "familyShareable" : false,
+      "internalID" : "6742895826",
+      "localizations" : [
+        {
+          "description" : "Get 180 coins to use in the app!",
+          "displayName" : "180 Coins",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "hashly.coins.180",
+      "referenceName" : "180 coins",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "21.99",
+      "familyShareable" : false,
+      "internalID" : "6742896177",
+      "localizations" : [
+        {
+          "description" : "Get 3000 coins to use in the app!",
+          "displayName" : "3000 Coins",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "hashly.coins.3000",
+      "referenceName" : "3000 Coins",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "7.99",
+      "familyShareable" : false,
+      "internalID" : "6742895682",
+      "localizations" : [
+        {
+          "description" : "Get 360 coins to use in the app!",
+          "displayName" : "360 Coins",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "hashly.coins.360",
+      "referenceName" : "360 coins",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "6742895448",
+      "localizations" : [
+        {
+          "description" : "Get 10000 coins to use in the app!",
+          "displayName" : "40 Coins",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "hashly.coins.40",
+      "referenceName" : "40 Coins",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "29.99",
+      "familyShareable" : false,
+      "internalID" : "6742896180",
+      "localizations" : [
+        {
+          "description" : "Get 6000 coins to use in the app!",
+          "displayName" : "6000 Coins",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "hashly.coins.6000",
+      "referenceName" : "6000 Coins",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "11.99",
+      "familyShareable" : false,
+      "internalID" : "6742895764",
+      "localizations" : [
+        {
+          "description" : "Get 720 coins to use in the app!",
+          "displayName" : "720 Coins",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "hashly.coins.720",
+      "referenceName" : "720 coins",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "6742895849",
+      "localizations" : [
+        {
+          "description" : "Get 90 coins to use in the app!",
+          "displayName" : "90 Coins",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "hashly.coins.90",
+      "referenceName" : "90 coins",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6742894946",
+    "_developerTeamID" : "XC3G4HLCUU",
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 763064889.63274002,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

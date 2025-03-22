@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8CC2006D2D8EB98000ACADEF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC2006C2D8EB98000ACADEF /* StoreKit.framework */; };
+		8CC201282D8F3A7200ACADEF /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 8CC201272D8F3A7200ACADEF /* KeychainAccess */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -15,9 +16,22 @@
 		8CC2FB1A2D8D669F00ACADEF /* Tagup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tagup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8CC201162D8F34F800ACADEF /* Exceptions for "Tagup" folder in "Tagup" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8CC2FB192D8D669F00ACADEF /* Tagup */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8CC2FB1C2D8D669F00ACADEF /* Tagup */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8CC201162D8F34F800ACADEF /* Exceptions for "Tagup" folder in "Tagup" target */,
+			);
 			path = Tagup;
 			sourceTree = "<group>";
 		};
@@ -28,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CC201282D8F3A7200ACADEF /* KeychainAccess in Frameworks */,
 				8CC2006D2D8EB98000ACADEF /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,9 +61,9 @@
 		8CC2FB112D8D669F00ACADEF = {
 			isa = PBXGroup;
 			children = (
-				8CC2FB1C2D8D669F00ACADEF /* Tagup */,
 				8CC2006B2D8EB98000ACADEF /* Frameworks */,
 				8CC2FB1B2D8D669F00ACADEF /* Products */,
+				8CC2FB1C2D8D669F00ACADEF /* Tagup */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +95,7 @@
 			);
 			name = Tagup;
 			packageProductDependencies = (
+				8CC201272D8F3A7200ACADEF /* KeychainAccess */,
 			);
 			productName = Tagup;
 			productReference = 8CC2FB1A2D8D669F00ACADEF /* Tagup.app */;
@@ -109,6 +125,9 @@
 			);
 			mainGroup = 8CC2FB112D8D669F00ACADEF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8CC201262D8F3A7200ACADEF /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8CC2FB1B2D8D669F00ACADEF /* Products */;
 			projectDirPath = "";
@@ -270,12 +289,12 @@
 				DEVELOPMENT_TEAM = XC3G4HLCUU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tagup/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Tagup;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = LIGHT;
 				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,12 +325,12 @@
 				DEVELOPMENT_TEAM = XC3G4HLCUU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tagup/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Tagup;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = LIGHT;
 				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -353,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8CC201262D8F3A7200ACADEF /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8CC201272D8F3A7200ACADEF /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CC201262D8F3A7200ACADEF /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8CC2FB122D8D669F00ACADEF /* Project object */;
 }

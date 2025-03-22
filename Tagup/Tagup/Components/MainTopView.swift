@@ -22,7 +22,7 @@ struct MainTopView: View {
                 Image(.mainCoin)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 14, height: 14)
+                    .frame(width: 16, height: 16)
             }
         }
     }
