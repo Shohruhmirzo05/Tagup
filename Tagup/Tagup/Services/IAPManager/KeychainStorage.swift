@@ -41,8 +41,8 @@ class KeychainManager {
         if let coinsString = try? keychain.get(coinsKey), let coins = Int(coinsString) {
             return coins 
         } else {
-            saveCoins(110)
-            return 110
+            saveCoins(100)
+            return 100
         }
     }
     

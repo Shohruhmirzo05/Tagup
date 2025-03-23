@@ -139,7 +139,7 @@ class StoreKitManager: ObservableObject {
     }
     
     @MainActor
-    func useCoins(cost: Int = 15) -> Bool {
+    func useCoins(cost: Int) -> Bool {
         let success = KeychainManager.shared.useCoins(cost)
         if success {
             NotificationCenter.default.post(name: .coinsUpdated, object: nil)
