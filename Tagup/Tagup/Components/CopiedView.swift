@@ -21,9 +21,9 @@ struct CopiedView: View {
     }
 }
 
-struct AddedToHistoryView: View {
+struct SavedView: View {
     var body: some View {
-        Text("Added to history")
+        Text("Saved")
             .padding(.vertical, 8)
             .padding(.horizontal)
             .background {

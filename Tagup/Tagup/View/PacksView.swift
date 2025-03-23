@@ -22,7 +22,7 @@ struct CoinPrice: Identifiable {
         .init(coin: 3000, price: 19.99, productID: "tagup.coins.3000"),
         .init(coin: 9000, price: 29.99, productID: "tagup.coins.9000"),
         .init(coin: 15000, price: 49.99, productID: "tagup.coins.15000"),
-        .init(coin: 30000, price: 79.99, productID: "tagup.coins.30000"),
+        .init(coin: 30000, price: 89.99, productID: "tagup.coins.30000"),
     ]
 }
 

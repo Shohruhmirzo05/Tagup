@@ -10,22 +10,24 @@ import SwiftUI
 struct OtherView: View {
     
     @StateObject var storeKitViewModel = StoreKitViewModel()
+    @State var showPrivacyView: Bool = false
+    @Binding var selection: Tab
     
     var body: some View {
         VStack(spacing: 26) {
             MainTopView()
                 .padding(.bottom)
             OtherCard(icon: .mailIcon, title: "Contact us") {
-                
+                Utils.shared.openEmail()
             }
             OtherCard(icon: .rateIcon, title: "Rate us") {
-                
+                Utils.shared.openAppStore()
             }
             OtherCard(icon: .solarBagBold, title: "More coins") {
-                
+                selection = .packs
             }
             OtherCard(icon: .privacyIcon, title: "Privacy & Policy") {
-                
+                showPrivacyView = true
             }
             Spacer(minLength: 0)
         }
@@ -35,6 +37,9 @@ struct OtherView: View {
         .safeAreaInset(edge: .top, content: TopArea)
         .onAppear {
             storeKitViewModel.requestProducts()
+        }
+        .sheet(isPresented: $showPrivacyView) {
+            PrivacyView()
         }
     }
     
@@ -71,5 +76,5 @@ struct OtherView: View {
 }
 
 #Preview {
-    OtherView()
+    OtherView(selection: .constant(.other))
 }

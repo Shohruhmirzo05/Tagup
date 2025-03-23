@@ -18,15 +18,6 @@ class Utils {
         }
     }
     
-    func shareApp() {
-        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-              let rootVC = windowScene.windows.first?.rootViewController else {
-            return
-        }
-        let activityVC = UIActivityViewController(activityItems: ["https://apps.apple.com/app/\(AppEnvironment.current.appId)"], applicationActivities: nil)
-        rootVC.present(activityVC, animated: true, completion: nil)
-    }
-    
     static func hapticFeedback(style: UIImpactFeedbackGenerator.FeedbackStyle = .light) {
         let generator = UIImpactFeedbackGenerator(style: style)
         generator.impactOccurred()

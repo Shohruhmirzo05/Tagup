@@ -33,7 +33,7 @@ struct TabbarView: View {
                 .tabItem {
                     Label(Tab.packs.tabName, image: Tab.packs.icon)
                 }
-            OtherView()
+            OtherView(selection: $selection)
                 .tag(Tab.other)
                 .tabItem {
                     Label(Tab.other.tabName, image: Tab.other.icon)

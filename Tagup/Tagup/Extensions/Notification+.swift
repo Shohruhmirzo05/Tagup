@@ -8,7 +8,6 @@
 import SwiftUI
 
 extension Notification.Name {
-    static let reloadImageUsageCount = Notification.Name("reloadImageUsageCount")
     static let coinsUpdated = Notification.Name("coinsUpdated")
     static let historyUpdated = Notification.Name("historyUpdated")
 }
