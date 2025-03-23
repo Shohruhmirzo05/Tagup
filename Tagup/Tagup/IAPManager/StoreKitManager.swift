@@ -15,28 +15,40 @@ class StoreKitManager: ObservableObject {
     @Published var purchasedIdentifiers: Set<String> = []
     @Published var isLoading = false
     
+    static let prices: [CoinPrice] = [
+        .init(coin: 50, price: 0.99, productID: "tagup.coins.50"),
+        .init(coin: 100, price: 1.99, productID: "tagup.coins.100"),
+        .init(coin: 200, price: 3.99, productID: "tagup.coins.200"),
+        .init(coin: 500, price: 7.99, productID: "tagup.coins.500"),
+        .init(coin: 1000, price: 13.99, productID: "tagup.coins.1000"),
+        .init(coin: 3000, price: 19.99, productID: "tagup.coins.3000"),
+        .init(coin: 9000, price: 29.99, productID: "tagup.coins.9000"),
+        .init(coin: 15000, price: 49.99, productID: "tagup.coins.15000"),
+        .init(coin: 30000, price: 79.99, productID: "tagup.coins.30000"),
+    ]
+    
     let coinProductIDs = [
-        "hashly.coins.40",
-        "hashly.coins.90",
-        "hashly.coins.180",
-        "hashly.coins.360",
-        "hashly.coins.720",
-        "hashly.coins.1500",
-        "hashly.coins.3000",
-        "hashly.coins.6000",
-        "hashly.coins.10000"
+        "tagup.coins.50",
+        "tagup.coins.100",
+        "tagup.coins.200",
+        "tagup.coins.500",
+        "tagup.coins.1000",
+        "tagup.coins.3000",
+        "tagup.coins.9000",
+        "tagup.coins.15000",
+        "tagup.coins.30000"
     ]
     
     let coinAmounts: [String: Int] = [
-        "hashly.coins.40": 40,
-        "hashly.coins.90": 90,
-        "hashly.coins.180": 180,
-        "hashly.coins.360": 360,
-        "hashly.coins.720": 720,
-        "hashly.coins.1500": 1500,
-        "hashly.coins.3000": 3000,
-        "hashly.coins.6000": 6000,
-        "hashly.coins.10000": 10000
+        "tagup.coins.50": 50,
+        "tagup.coins.100": 100,
+        "tagup.coins.200": 200,
+        "tagup.coins.500": 500,
+        "tagup.coins.1000": 1000,
+        "tagup.coins.3000": 3000,
+        "tagup.coins.9000": 9000,
+        "tagup.coins.15000": 15000,
+        "tagup.coins.30000": 30000
     ]
     
     var updateListenerTask: Task<Void, Error>?

@@ -16,6 +16,7 @@ class MainViewModel: ObservableObject {
 struct MainView: View {
     
     @StateObject var viewModel = MainViewModel()
+    @StateObject var storeKitViewModel = StoreKitViewModel()
     
     var body: some View {
         NavigationStack {
@@ -35,6 +36,7 @@ struct MainView: View {
                 }
                 Spacer(minLength: 0)
             }
+            .padding(.horizontal, 8)
             .padding()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .safeAreaInset(edge: .top) {
@@ -48,6 +50,9 @@ struct MainView: View {
             }
             .navigationDestination(isPresented: $viewModel.showTodaysTagsView) {
                 TodaysTagsView()
+            }
+            .onAppear {
+                storeKitViewModel.requestProducts()
             }
         }
     }
