@@ -39,7 +39,7 @@ class KeychainManager {
     
     func getCoins() -> Int {
         if let coinsString = try? keychain.get(coinsKey), let coins = Int(coinsString) {
-            return coins 
+            return coins
         } else {
             saveCoins(100)
             return 100
@@ -86,16 +86,16 @@ class KeychainManager {
     
     func deleteKeywordsFromGroup(groupID: UUID, keywordsToDelete: [String]) {
         var groups = fetchAllKeywordGroups()
-
+        
         if let index = groups.firstIndex(where: { $0.id == groupID }) {
             groups[index].keywords.removeAll { keywordsToDelete.contains($0) }
             
             if groups[index].keywords.isEmpty {
                 groups.remove(at: index)
             }
-
+            
             saveKeywordGroups(groups)
-
+            
             DispatchQueue.main.async {
                 NotificationCenter.default.post(name: .historyUpdated, object: nil)
             }

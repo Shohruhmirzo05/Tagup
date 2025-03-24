@@ -8,6 +8,8 @@
 		<dict>
 			<key>AppID</key>
 			<string>id6502000076</string>
+			<key>Email</key>
+			<string>contact@tagup.org</string>
 			<key>baseUrl</key>
 			<string>https://ai.tag-up.uk/</string>
 		</dict>
@@ -17,6 +19,8 @@
 			<string>id6502000076</string>
 			<key>baseUrl</key>
 			<string>https://ai.tag-up.uk/</string>
+			<key>Email</key>
+			<string>contact@tagup.org</string>
 		</dict>
 	</dict>
 	<key>LSApplicationQueriesSchemes</key>

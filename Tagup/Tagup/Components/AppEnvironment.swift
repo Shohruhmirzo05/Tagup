@@ -7,18 +7,23 @@
 
 import SwiftUI
 
-import SwiftUI
-
 enum AppEnvironment: String {
+    case development
     case production
 }
 
 extension AppEnvironment {
     static var current: AppEnvironment {
+#if RELEASE
         return .production
+#elseif DEBUG
+        return .development
+#else
+        return .development
+#endif
     }
 }
-
+ 
 extension AppEnvironment {
     private var keyPairs: [String: String] {
         guard
@@ -30,12 +35,16 @@ extension AppEnvironment {
         }
         return keyPairs
     }
-    
+
     var baseUrl: String {
         keyPairs["baseUrl"] ?? ""
     }
-        
+    
     var appId: String {
         keyPairs["AppID"] ?? ""
+    }
+    
+    var email: String {
+        keyPairs["Email"] ?? ""
     }
 }

@@ -34,7 +34,7 @@ class Utils {
     }
     
     func openEmail() {
-        let email = "contact@hashlyapp.org"
+        let email = AppEnvironment.production.email
         let subject = "Support Request"
         let body = "Hello,\n\nI need help with..."
         
