@@ -46,11 +46,11 @@ class Utils {
                 UIApplication.shared.open(emailURL)
             } else {
                 Utils.hapticFeedback(style: .light)
-                OneButtonAlert.shared.present(title: "Support", message: "If you need help, reach us by email at contact@hashlyapp.org", button: "Ok")
+                OneButtonAlert.shared.present(title: "Support", message: "If you need help, reach us by email at \(AppEnvironment.production.email)", button: "Ok")
             }
         } else {
             Utils.hapticFeedback(style: .light)
-            OneButtonAlert.shared.present(title: "Support", message: "If you need help, reach us by email at contact@hashlyapp.org", button: "Ok")
+            OneButtonAlert.shared.present(title: "Support", message: "If you need help, reach us by email at \(AppEnvironment.production.email)", button: "Ok")
         }
     }
 }
